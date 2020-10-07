@@ -7,7 +7,7 @@ function J = computeCost(X, y, theta)
 m = length(y); % number of training examples
 
 % You need to return the following variables correctly 
-k = 1:m
+k = 1:m;
 J = (1/(2*m)) * sum( ((theta(1) + theta(2) .* X(k,2)) - y(k)) .^ 2 );
 
 % ====================== YOUR CODE HERE ======================
